@@ -17,7 +17,7 @@
     "node": ">=10.0.0"
   },
   "files": [
-    "lib/index.mjs",
+    "lib/index.js",
     "browser.js"
   ],
   "homepage": "https://github.com/leonm1/slim-fetch",
@@ -28,11 +28,11 @@
   ],
   "license": "MIT",
   "main": "lib/index",
-  "module": "lib/index.mjs",
+  "module": "lib/index.js",
   "name": "slim-fetch",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leonm1/slim-fetch.git"
   },
-  "version": "2.3.0"
+  "version": "2.3.1"
 }
