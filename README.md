@@ -1,4 +1,4 @@
-node-fetch
+slim-fetch
 ==========
 
 [![npm version][npm-image]][npm-url]
@@ -6,9 +6,11 @@ node-fetch
 [![coverage status][codecov-image]][codecov-url]
 [![install size][install-size-image]][install-size-url]
 
-A light-weight module that brings `window.fetch` to Node.js
+A slimmed-down but feature complete version of node-fetch that brings `window.fetch` to Node.js
 
-(We are looking for [v2 maintainers and collaborators](https://github.com/bitinn/node-fetch/issues/252))
+For the upstream project, visit [bitinn/node-fetch](https://github.com/bitinn/node-fetch)
+
+**Note**: I did not create this project, I only removed unnecessary files from the original to save on package size.
 
 <!-- TOC -->
 
