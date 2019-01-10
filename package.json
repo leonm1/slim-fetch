@@ -1,0 +1,72 @@
+{
+  "author": {
+    "name": "David Frank"
+  },
+  "maintainers": [{
+    "name": "Matt Leon",
+    "email": "matthew.leon@vanderbilt.edu"
+  }],
+  "browser": "./browser.js",
+  "bugs": {
+    "url": "https://github.com/leonm1/slim-fetch/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A slimmed-down version of the library node-fetch that brings window.fetch to node.js",
+  "devDependencies": {
+    "abort-controller": "^1.0.2",
+    "abortcontroller-polyfill": "^1.1.9",
+    "babel-core": "^6.26.0",
+    "babel-plugin-istanbul": "^4.1.5",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.16.3",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-iterator": "^1.1.1",
+    "chai-string": "~1.3.0",
+    "codecov": "^3.0.0",
+    "cross-env": "^5.1.3",
+    "form-data": "^2.3.1",
+    "is-builtin-module": "^1.0.0",
+    "mocha": "^5.0.0",
+    "nyc": "11.9.0",
+    "parted": "^0.1.1",
+    "promise": "^8.0.1",
+    "resumer": "0.0.0",
+    "rollup": "^0.63.4",
+    "rollup-plugin-babel": "^3.0.3",
+    "string-to-arraybuffer": "^1.0.0",
+    "url-search-params": "^1.0.2",
+    "whatwg-url": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "files": [
+    "lib/index.mjs",
+    "browser.js"
+  ],
+  "homepage": "https://github.com/leonm1/slim-fetch",
+  "keywords": [
+    "fetch",
+    "http",
+    "promise"
+  ],
+  "license": "MIT",
+  "main": "lib/index",
+  "module": "lib/index.mjs",
+  "name": "slim-fetch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonm1/slim-fetch.git"
+  },
+  "scripts": {
+    "build": "cross-env BABEL_ENV=rollup rollup -c",
+    "coverage": "cross-env BABEL_ENV=coverage nyc --reporter json --reporter text mocha -R spec test/test.js && codecov -f coverage/coverage-final.json",
+    "prepare": "npm run build",
+    "report": "cross-env BABEL_ENV=coverage nyc --reporter lcov --reporter text mocha -R spec test/test.js",
+    "test": "cross-env BABEL_ENV=test mocha --require babel-register test/test.js"
+  },
+  "version": "2.3.0"
+}
