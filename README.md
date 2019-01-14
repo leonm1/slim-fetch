@@ -73,13 +73,13 @@ See Matt Andrews' [isomorphic-fetch](https://github.com/matthew-andrews/isomorph
 Current stable release (`2.x`)
 
 ```sh
-$ npm install node-fetch --save
+$ npm install slim-fetch --save
 ```
 
 ## Loading and configuring the module
 We suggest you load the module via `require`, pending the stabalizing of es modules in node:
 ```js
-const fetch = require('node-fetch');
+const fetch = require('slim-fetch');
 ```
 
 If you are using a Promise library other than native, set it through fetch.Promise:
